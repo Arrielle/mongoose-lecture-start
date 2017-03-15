@@ -3,10 +3,10 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var app = express();
-var taskRouter = require('./routes/tasks');
+var taskRouter = require('./routes/tasks-route');
 
 //middleware
-app.use(express.static('public'));
+app.use(express.static('server/public'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 

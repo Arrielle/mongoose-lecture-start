@@ -12,12 +12,12 @@
   <!-- {{task.name}} and the id number is {{task.id}} -->
   <span class="col-xs-6">{{task}} the status is {{task.status}}</span>
   <span class="col-xs-3" ng-hide="task.status">
-    <button ng-click="tc.completeTask(task.id)" class="btn btn-primary">Complete</button>
+    <button ng-click="tc.completeTask(task._id)" class="btn btn-primary">Complete</button>
   </span>
   <span class="col-xs-3" ng-show="task.status">
-    <button ng-click="tc.uncompleteTask(task.id)" class="btn btn-info">This shouldn't be complete</button>
+    <button ng-click="tc.uncompleteTask(task._id)" class="btn btn-info">This shouldn't be complete</button>
   </span>
   <span class="col-xs-3">
-    <button ng-click="tc.deleteTask(task.id)" class="btn btn-danger">Delete</button>
+    <button ng-click="tc.deleteTask(task._id)" class="btn btn-danger">Delete</button>
   </span>
 </div>
